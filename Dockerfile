@@ -4,6 +4,7 @@ COPY package.json .
 RUN npm install
 COPY . . 
 RUN npm run build
+
 # will output to /app/build
 
 #get output for nginx, default nginx container will start nginx
