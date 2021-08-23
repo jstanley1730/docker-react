@@ -9,5 +9,4 @@ RUN npm run build
 
 #get output for nginx, default nginx container will start nginx
 FROM nginx:alpine
-EXPOSE 80
 COPY --from=0 /app/build /usr/share/nginx/html
